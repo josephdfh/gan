@@ -177,8 +177,8 @@ def train(epoch_count, batch_size, z_dim, learning_rate, beta1,
             print("Epoch {}/{}...".format(e + 1, epochs),
                   "Discriminator Loss: {:.4f}...".format(train_loss_d),
                   "Generator Loss: {:.4f}".format(train_loss_g))
-            # Save losses to view after training
-            losses.append((train_loss_d, train_loss_g))
+            
+
             show_generator_output(sess, 1, input_z, out_channel_dim, data_image_mode)
 
 
